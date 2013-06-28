@@ -7,7 +7,7 @@
 <h3>决定前，请慎重考虑如下问题：</h3>
 <p>
 1. 您是否阅读过《<a href = "http://www.ourfreesky.org/ofs/recruit/teacher.html#1">申请人须知</a>》，并对其中提到的所有条款均已知悉？
-<br><input type=checkbox />已知悉</p>                                        
+<br><input type=checkbox name="notice" />已知悉</p>                                        
 <p>2. 您目前的工作或学习是否属在职？
 <br>                                          
 <input type=radio value="quitted" name=work >已不在职</input><br>
@@ -15,7 +15,7 @@
 <input type=radio value="quit" name=work >离职去支教</input><br>
 <input type=radio value="leave" name=work >向单位请假</input><br>
 <input type=radio value="other" name=work >以其他方式保留职位</input>
-<input type=text size=30 name="worktype" /><br>
+<input type=text size=30 name="workdetail" /><br>
 再去支教</p>
                                           
 <p>3. 简述您的经济来源与状况，并权衡是否可支付支教过程中的基本生活费、路费的同时还能保留适当的备用金（支教活动没有任何经济报酬）。
@@ -23,37 +23,37 @@
 </p>
 <p>                                          
 4. 您何时开始有支教的想法？请简述您对支教的看法。
-<br><input type=text size=80 name="income" />
+<br><input type=text size=80 name="think" />
 </p>
 <p>                                       
 5. 您是否清楚支教所存在的风险，认为应该如何应对这些风险？
-<br><input type=text size=80 name="income" />
+<br><input type=text size=80 name="risk" />
 </p>
 <p>                                       
                                           
 6. 对于参与支教工作，您对自己有何期望或希望贡献什么？
-<br><input type=text size=80 name="income" />
+<br><input type=text size=80 name="hope" />
 </p>
 <p>                                       
                                           
 7. 您是否就计划去支教的想法与您周边的亲朋好友进行过沟通？他们对您计划支教的想法所持的态度如何？
-<br><input type=text size=80 name="income" />
+<br><input type=text size=80 name="friend" />
 </p>
 <p>                                       
                                           
 8. 请告知您的直系长辈亲属的联系方式，以便我们与您的家人联系，获取他们对您计划支教的支持程度。
-<br><input type=text size=80 name="income" />
+<br><input type=text size=80 name="parent" />
 </p>
 <p>                                       
                                           
 9. 您是否愿意提供近三个月内的体检报告以便我们对您的健康状况进行简单的评估。
-<br><input type=text size=80 name="income" />
+<br><input type=checkbox name="healthy" />是
 </p>
 <hr>
 <h3>个人基本资料：</h3>
 <table>
 <tr>
-  <td>真实姓名</td><td><input type=text size=10 name="name" /></td>
+	<td>真实姓名</td><td><input type=text size=10 name="name" /></td>
 	<td>性别</td><td><input type=text size=10 name="sex" /></td>
 	<td>出生年份</td><td><input type=text size=10 name="birth" /></td>
 	<td>教育程度</td><td><input type=text size=30 name="edu" /></td>
@@ -123,7 +123,7 @@
 
 <hr>
 其他意见：<br>
-<textarea cols=80 rows=10 id="other">
+<textarea cols=80 rows=10 name="other">
 </textarea>
 <hr>
 <input type=submit value="保存" name="save" />
